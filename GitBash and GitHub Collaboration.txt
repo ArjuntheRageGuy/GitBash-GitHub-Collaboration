@@ -1,0 +1,245 @@
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~ (master)
+$ git config --global --list
+user.email=charliepagapong@gmail.com
+user.name=charlie
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~ (master)
+$ git config --global user.name "Arjun Rafon"
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~ (master)
+$ git config --global user.email "Ajrafon@gmail.com"
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~ (master)
+$ git config --global --list
+user.email=Ajrafon@gmail.com
+user.name=Arjun Rafon
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~ (master)
+$ cd Desktop
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop (master)
+$ mkdir GitCollab
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop (master)
+$ cd GitCollab
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git init
+Initialized empty Git repository in C:/Users/PC23-LAB1/Desktop/GitCollab/.git/
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git config --local --list
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git config --local user.name "Arjun Rafon"
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git config --local user.email "Ajrafon@gmail.com"
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git config --local --list
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=Arjun Rafon
+user.email=Ajrafon@gmail.com
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ touch Main.java
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ touch script.py
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ styles.css
+bash: styles.css: command not found
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ touch styles.css
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ touch index.html
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ touch app.js
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ touch data.json
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ touch README.md
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ nano Main.java
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ javac Main.java
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ java Main
+Greetings! This file is printing a greeting message.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git add Main.java
+warning: in the working copy of 'Main.java', LF will be replaced by CRLF the next time Git touches it
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git commit -m "A java file with a printed greeting message."
+[master (root-commit) 9ca9792] A java file with a printed greeting message.
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Main.java
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git log
+commit 9ca97925eeff6cdc5a7e5239334e6adc9b5a0ace (HEAD -> master)
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:00:47 2026 +0800
+
+    A java file with a printed greeting message.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ nano script.py
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ python script.py
+Greetings! This other file is also printing a greeting message.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git add script.py
+warning: in the working copy of 'script.py', LF will be replaced by CRLF the next time Git touches it
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git commit -m "A python file with a printed greeting message."
+[master 1266144] A python file with a printed greeting message.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 script.py
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git log
+commit 12661441dd157810f925a4357daa665fb25973fb (HEAD -> master)
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:04:06 2026 +0800
+
+    A python file with a printed greeting message.
+
+commit 9ca97925eeff6cdc5a7e5239334e6adc9b5a0ace
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:00:47 2026 +0800
+
+    A java file with a printed greeting message.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ nano styles.css
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ nano index.html
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git add styles.css index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'styles.css', LF will be replaced by CRLF the next time Git touches it
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git commit -m "Adding styles.css with background color and linking it to index.html."
+[master 6e921a7] Adding styles.css with background color and linking it to index.html.
+ 2 files changed, 13 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git log
+commit 6e921a70f931e17385c9f9fc838d5dcbb4d1b6ce (HEAD -> master)
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:16:05 2026 +0800
+
+    Adding styles.css with background color and linking it to index.html.
+
+commit 12661441dd157810f925a4357daa665fb25973fb
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:04:06 2026 +0800
+
+    A python file with a printed greeting message.
+
+commit 9ca97925eeff6cdc5a7e5239334e6adc9b5a0ace
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:00:47 2026 +0800
+
+    A java file with a printed greeting message.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ nano app.js
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ nano index.html
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git add app.js index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app.js', LF will be replaced by CRLF the next time Git touches it
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git commit -m "Adding app.js with a console greeting message."
+[master 94b9651] Adding app.js with a console greeting message.
+ 2 files changed, 7 insertions(+)
+ create mode 100644 app.js
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git log
+commit 94b96511f9892130f984ef03ff8b53e374c70726 (HEAD -> master)
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:22:55 2026 +0800
+
+    Adding app.js with a console greeting message.
+
+commit 6e921a70f931e17385c9f9fc838d5dcbb4d1b6ce
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:16:05 2026 +0800
+
+    Adding styles.css with background color and linking it to index.html.
+
+commit 12661441dd157810f925a4357daa665fb25973fb
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:04:06 2026 +0800
+
+    A python file with a printed greeting message.
+
+commit 9ca97925eeff6cdc5a7e5239334e6adc9b5a0ace
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:00:47 2026 +0800
+
+    A java file with a printed greeting message.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git remote add origin https://github.com/ArjuntheRageGuy/GitBash-GitHub-Collaboration.git
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (master)
+$ git branch -M main
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ git push -u origin main
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 1.71 KiB | 1.71 MiB/s, done.
+Total 14 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ArjuntheRageGuy/GitBash-GitHub-Collaboration.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$

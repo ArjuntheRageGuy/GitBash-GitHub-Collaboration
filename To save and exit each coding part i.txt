@@ -1,0 +1,91 @@
+To save and exit each coding part in GitBash is to CTRL+O, ENTER, then CTRL+X.
+
+nano Main.java
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, Arjun Rafon! Welcome to GitCollab.");
+    }
+}
+
+javac Main.java
+
+java Main
+
+git add Main.java
+git commit -m "Add Main.java with greeting message"
+
+
+nano script.py
+
+print("Hello, Arjun Rafon! Welcome to GitCollab.")
+
+python script.py/python3 script.py
+
+git add script.py
+git commit -m "Add script.py with greeting message"
+
+
+nano styles.css
+
+body {
+    background-color: lightblue;
+}
+
+nano index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitCollab Test Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Hello, Arjun Rafon! Welcome to GitCollab.</h1>
+</body>
+</html>
+
+git add styles.css index.html
+git commit -m "Add styles.css with background color and link to index.html"
+
+do the same for app.js, but this time for displaying a message in the console.
+
+
+nano app.js
+
+console.log("Hello, Arjun Rafon! Welcome to GitCollab.");
+
+nano index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitCollab Test Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Hello, Arjun Rafon! Welcome to GitCollab.</h1>
+
+    <!-- Link to JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
+
+git add app.js index.html
+git commit -m "Add app.js with console greeting message"
+
+
+nano data.json
+
+{
+  "name": "Arjun Rafon",
+  "email": "Ajrafon@gmail.com",
+  "project": "GitCollab",
+  "message": "Hello, welcome to GitCollab!"
+}
+
+cat data.json
+
+git add data.json
+git commit -m "Add data.json with sample JSON object"
+
