@@ -242,4 +242,135 @@ To https://github.com/ArjuntheRageGuy/GitBash-GitHub-Collaboration.git
 branch 'main' set up to track 'origin/main'.
 
 PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ nano data.json
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ cat data.json
+{
+  "name": "Arjun Rafon",
+  "email": "Ajrafon@gmail.com",
+  "project": "GitCollab",
+  "message": "This project involves collabing with both GitBash and GitHub, along with a little bit of coding too, tbh."
+}
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ git add data.json
+warning: in the working copy of 'data.json', LF will be replaced by CRLF the next time Git touches it
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ git commit -m "Adding data.json with a sample JSON object."
+[main 0564cf8] Adding data.json with a sample JSON object.
+ 1 file changed, 6 insertions(+)
+ create mode 100644 data.json
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ git log
+commit 0564cf89c3c8243b8ac1da7a19accfc3a346e7f9 (HEAD -> main)
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:43:46 2026 +0800
+
+    Adding data.json with a sample JSON object.
+
+commit 94b96511f9892130f984ef03ff8b53e374c70726 (origin/main)
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:22:55 2026 +0800
+
+    Adding app.js with a console greeting message.
+
+commit 6e921a70f931e17385c9f9fc838d5dcbb4d1b6ce
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:16:05 2026 +0800
+
+    Adding styles.css with background color and linking it to index.html.
+
+commit 12661441dd157810f925a4357daa665fb25973fb
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:04:06 2026 +0800
+
+    A python file with a printed greeting message.
+
+commit 9ca97925eeff6cdc5a7e5239334e6adc9b5a0ace
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:00:47 2026 +0800
+
+    A java file with a printed greeting message.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ nano README.md
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ cat README.md
+# GitCollab Project
+
+This is a collaborative project repository created using Git Bash.
+It contains multiple files in different languages and formats to demonstrate teamwork and version control with Git.
+
+## Files Included
+- **Main.java** → Prints a greeting message in Java.
+- **script.py** → Prints a greeting message in Python.
+- **styles.css** → Adds a simple background color to the webpage.
+- **index.html** → Displays a greeting message styled with CSS.
+- **app.js** → Logs a greeting message in the browser console.
+- **data.json** → Stores sample JSON data about the project.
+- **README.md** → Provides documentation and description of the project.
+
+## Purpose
+The purpose of this project is to:
+- Practice using Git and Git Bash for collaboration.
+- Learn how to manage different types of files in a single repository.
+- Demonstrate basic functionality in Java, Python, CSS, HTML, JavaScript, and JSON.
+
+## Author
+Created by **Arjun Rafon**
+Email: **Ajrafon@gmail.com**
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ git commit -m "Adding README.md with a project description."
+[main edb764f] Adding README.md with a project description.
+ 1 file changed, 23 insertions(+)
+ create mode 100644 README.md
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
+$ git log
+commit edb764f1e06c884d8e2b15ca4415e9bc27962c9c (HEAD -> main)
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:45:07 2026 +0800
+
+    Adding README.md with a project description.
+
+commit 0564cf89c3c8243b8ac1da7a19accfc3a346e7f9
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:43:46 2026 +0800
+
+    Adding data.json with a sample JSON object.
+
+commit 94b96511f9892130f984ef03ff8b53e374c70726 (origin/main)
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:22:55 2026 +0800
+
+    Adding app.js with a console greeting message.
+
+commit 6e921a70f931e17385c9f9fc838d5dcbb4d1b6ce
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:16:05 2026 +0800
+
+    Adding styles.css with background color and linking it to index.html.
+
+commit 12661441dd157810f925a4357daa665fb25973fb
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:04:06 2026 +0800
+
+    A python file with a printed greeting message.
+
+commit 9ca97925eeff6cdc5a7e5239334e6adc9b5a0ace
+Author: Arjun Rafon <Ajrafon@gmail.com>
+Date:   Mon Feb 2 10:00:47 2026 +0800
+
+    A java file with a printed greeting message.
+
+PC23-LAB1@DESKTOP-E4JLKCF MINGW64 ~/Desktop/GitCollab (main)
 $
